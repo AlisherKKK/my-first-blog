@@ -1,0 +1,59 @@
+{% extends 'index.html' %}
+
+{% block full-name %}
+	
+	{{information.p_full_name}}
+
+{% endblock %}
+
+{% block information %}
+	
+	{{information.p_information}}
+
+{% endblock %}
+
+{% block educate %}
+
+	{% for a in education %}
+
+		<div class="fh5co-feature">
+			<div class="fh5co-icon">
+				<i class="icon-graduation-cap"></i>
+			</div>
+			<div class="fh5co-text">
+				<h2>{{a.e_start}}-{{a.e_end}}</h2>
+				<p>{{a.e_place}}</p>
+			</div>
+		</div>		
+	{% endfor %}
+
+{% endblock %}
+
+
+
+{% block exper %}
+
+	{% for a in experience %}
+
+		<div class="fh5co-feature">
+			<div class="fh5co-icon">
+				<i class="icon-black-tie"></i>
+			</div>
+			<div class="fh5co-text">
+				<h2>{{a.ed_start}}-{{a.ed_end}}</h2>
+				<h3>{{a.ed_place}}</h3>
+			</div>
+		</div> 
+	{% endfor %}
+{% endblock %}
+
+{% block skills %}
+
+	{% for a in skill %}
+
+		<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+			<div class="chart" data-percent="{{a.s_percent}}"><span><strong>{{a.s_name}}</strong>{{a.s_percent}}%</span></div>
+		</div>
+		
+	{% endfor %}
+{% endblock %}

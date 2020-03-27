@@ -1,0 +1,11 @@
+{% extends 'reg_page.html' %}
+
+{% block optin %}
+
+	{% for a in list_of_person %}
+
+		<option value="{% url 'blogs:detail' a.id %}">{{a.p_full_name}}</option>
+
+	{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html > 
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Personal &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> 
+	{% load static %}
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/static/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<style type="text/css" media="screen">
+		.dddiii {
+		  padding: 16px;
+		  background-color: white;
+		}
+
+		/* Full-width input fields */
+		.iiinnn[type=text], .iiinnn[type=password] {
+		  width: 100%;
+		  padding: 15px;
+		  margin: 5px 0 22px 0;
+		  display: inline-block;
+		  border: none;
+		  background: #000;
+		}
+
+		.iiinnn[type=text]:focus, .iiinnn[type=password]:focus {
+		  background-color: rgb(0, 0, 0);
+		  outline: none;
+		}
+
+		/* Overwrite default styles of hr */
+		hr {
+		  border: 1px solid #f1f1f1;
+		  margin-bottom: 25px;
+		}
+
+		/* Set a style for the submit button */
+		.bbbttt {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 16px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		  opacity: 0.9;
+		}
+
+		.bbbttt:hover {
+		  opacity: 1;
+		}
+	</style>
+
+	</head>
+	<body style="background-image: url(/static/images/bg_img.jpg);">
+	
+	<div id="fh5co-main">
+		<div class="fh5co-tab-wrap">
+			<ul class="fh5co-tab-menu">
+				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Profile</span></a></li>
+				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Educations</span></a></li>
+				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experiences</span></a></li>
+				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skillss</span></a></li>
+			</ul>
+			<div class="fh5co-tab-content active" data-content="1">
+				<div class="fh5co-content-inner text-center">
+					<div class="row row-bottom-padded-sm">
+						<div class="col-md-12">
+							<figure>
+								<img src="/static/images/profile_img.png" alt="Free HTML5 Wesbite Template by FreeHTML5.co">
+							</figure>
+							<h1>{% block full-name %}{% endblock %}</h1>
+							<p>{% block information %}{% endblock %}</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 fh5co-counter">
+							<div class="fh5co-number fh5co-left">10</div>
+							<div class="fh5co-text">
+								<h3 class="border-bottom">Years of experience in Web Design</h3>
+								<p>More information</p>
+							</div>
+						</div>
+					</div>
+					<ul class="fh5co-social">
+						<li><a href="#"><i class="icon-envelope"></i></a></li>
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+						<li><a href="#"><i class="icon-google"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="fh5co-tab-content" data-content="2">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Far far away, behind the word mountains, far from the countries.</p>
+
+							<!--<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-graduation-cap"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>{% block a %}{% endblock %}</h2>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-graduation-cap"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2004-2008</h2>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-graduation-cap"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2008-2012</h2>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>-->
+							{% block educate %}{% endblock %}
+							
+						</div>
+						<form action="{% url 'blogs:add_educate' information.id %}" method="POST">
+						
+                        {% csrf_token %}
+							  <div class="dddiii">
+							    <h1 style="color: black">Add Educations</h1>
+							    <input class='iiinnn' type="text" placeholder="Year from..." name="from" required>
+							    <input class='iiinnn' type="text" placeholder="Place" name="place" required>
+
+							    <input class='iiinnn' type="text" placeholder="due" name="due" required>
+							    <hr>
+							    <button type="submit" class="bbbttt">Add</button>
+							  </div>
+							</form>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content" data-content="3">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+
+							<p>I have the privilege to work with these cool companies.</p>
+
+							<!--<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2008 - Present</h2>
+									<h3>XYZ Inc.</h3>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2004-2008</h2>
+									<h3>Previous Ltd Co.</h3>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>1999-2004</h2>
+									<h3>Previous Ltd Co.</h3>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>-->
+							{% block exper %}{% endblock %}
+						</div>
+						<form action="{% url 'blogs:add_experience' information.id %}" method="POST">
+						
+                        {% csrf_token %}
+							  <div class="dddiii">
+							    <h1 style="color: black">Add Educations</h1>
+							    <input class='iiinnn' type="text" placeholder="Year from..." name="from" required>
+							    <input class='iiinnn' type="text" placeholder="Place" name="place" required>
+							    <input class='iiinnn' type="text" placeholder="due" name="due" required>
+							    <hr>
+							    <button type="submit" class="bbbttt">Add</button>
+							  </div>
+							</form>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content" data-content="4">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+						<!--<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
+						</div>
+-->						{% block skills %}{% endblock %}
+					</div>
+					<form action="{% url 'blogs:add_skills' information.id %}" method="POST">
+						
+                        {% csrf_token %}
+							  <div class="dddiii">
+							    <h1 style="color: black">Add Educations</h1>
+							    <input class='iiinnn' type="text" placeholder="Skill" name="name" required>
+							    <input class='iiinnn' type="text" placeholder="Percentage" name="perc" required>
+							    <hr>
+							    <button type="submit" class="bbbttt">Add</button>
+							  </div>
+							</form>
+				</div>
+			</div>
+		</div>
+		<footer id="fh5co-footer">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<small>
+						&copy; 2016 Personal Free HTML5 Template. All Rights Reserved. <span class="fh5co-author">
+						Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></span>
+					</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="/static/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/static/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/static/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/static/js/jquery.waypoints.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="/static/js/jquery.easypiechart.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="/static/js/main.js"></script>
+
+	</body>
+</html>
+
